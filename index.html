@@ -115,7 +115,8 @@ form {
 
 <div id="Contact-Us" class="tabcontent">
  <h1 style="color:white;">Contact Us</h1>
-  <form>
+  <form action="https://api.web3forms.com/submit" method="POST">
+	  <input type="hidden" name="access_key" value="368c22e7-bc83-420d-b141-ec5cabc516ce">
     <!-- Text Input -->
     <label for="name"><strong>Name:</strong></label>
     <input type="text" id="name" name="name" placeholder="Enter Name" required>
@@ -147,6 +148,7 @@ form {
     <br/>
 
     <!-- Submit Button -->
+	  <input type="hidden" name="redirect" value="https://web3forms.com/success">
     <button type="submit">Submit</button>
   </form>
 </div>
