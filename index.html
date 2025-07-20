@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Looking for an affordable online accounting software that also helps with tax problems.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Meta Tags, Metadata, tax, accounting">
+  <meta name="author" content="Saint Nukomus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Saint Nukomus </title>
+<style>
+* {box-sizing: border-box}
+
+ol.c {
+  list-style-type: upper-roman; font-size: 20px
+}
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: auto;
+  font-family: baskerville;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #000066;
+  color: white; 
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size:20px;
+  width: 25%;
+  font-weight:bold
+}
+
+.tablink:hover {
+  background-color: #0000FF;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 12px;
+  height: 100%;
+
+}
+
+/* To style the form on the contact us page */
+form {
+                width: 70%;
+		height: 20%
+                max-width: 400px;
+                background-color: #0000ff;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+		margin: auto
+            }
+/* To set the full screen background image on every page */
+#Home {background-image: url('zion2.jpg');font-size: 42px;}
+#Accounting-Solutions {background-image: url('zion2.jpg');font-size: 42px;}
+#Tax-Solutions {background-image: url('zion2.jpg');font-size: 42px;}
+#Contact-Us {background-image: url('zion2.jpg');font-size: 42px;}
+
+</style>
+
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Accounting-Solutions', this, 'blue')">Accounting Solutions</button>
+<button class="tablink" onclick="openPage('Tax-Solutions', this, 'blue')">Tax Solutions</button>
+<button class="tablink" onclick="openPage('Contact-Us', this, 'blue')">Contact Us</button>
+
+<div id="Home" class="tabcontent">
+  <h1>We Specialize in Fixing Problems!</h1>
+  <p>The solutions we have created are guaranteed to work...</p>
+</div>
+
+<div id="Accounting-Solutions" class="tabcontent">
+  <h1>Pretty Books</h1>
+<p Style="color: white; font-size: 30px;">Pretty Books started in 2025 as an inexpensive, online, secure way for small to medium sized businesses keep track of their financial information.</p>
+<ol class="c">
+  <p Style="color: white; font-size: 30px;">Here is a list of what you can accomplish using our user friendly application.</p>
+<ol class="c">
+
+  <li>Record Journal Entries</li>
+  <li>Print all Necessary Reports; such as Trail Balance, General Journal, General Ledger</li>
+  <li>Print all Financial Statements(Balance Sheet, Income Statement, and Cash Flow Statement).</li>
+  <li>Receive a Free Compilation Report for Signing Up</li>
+</ol>
+<br>
+<!code for link to pretty books website>
+<a href="https://www.saintnukomustaxservice.com" style="color: #00FFFF;">Click here to begin organizing your financial information.</a>
+</div>
+
+<div id="Tax-Solutions" class="tabcontent">
+  <h1>Saint Nukomus Tax Service</h1>
+<p Style="color: white; font-size: 30px;">The numbers don't lie and hightlight a problem not only facing individuals and businesses, but a nation .</p>
+<ol class="c">
+  <p Style="color: white; font-size: 30px;">Here are some statistics illustrating the scope of tax problems in the US:</p>
+<ol class="c">
+
+  <li>Individuals behind on taxes: At the end of 2023, over 11.37 million Americans owed more than $158.57 billion in unpaid taxes to the IRS.</li>
+  <li>Tax gap: The IRS estimates that a significant portion of taxes owed goes uncollected. The gross tax gap for Tax Year (TY) 2022 is estimated at $602 billion, <a href="https://www.irs.gov/statistics/irs-the-tax-gap" style="color: #00FFFF;"> according to the IRS.</a></li>
+  <li>Compliance Costs: Complying with tax filing and reporting requirements costs the US economy approximately $546 billion annually, <a href="https://www.taxfoundation.org/data/all/federal/irs-tax-compliance-costs" style="color: #00FFFF;"> according to the Tax Foundation.</a></li>
+  <li>Audits: While less than 2% of IRS tax audits result in criminal charges, 89% of audited returns are changed by the IRS, according to Jackson Hewitt.</li>
+</ol>
+<br>
+<!code for link to pretty books website>
+<a href="https://www.saintnukomustaxservice.com" style="color: #00FFFF;">Click here to begin resolving your tax situation.</a>
+</div>
+
+<div id="Contact-Us" class="tabcontent">
+ <h1 style="color:white;">Contact Us</h1>
+  <form>
+    <!-- Text Input -->
+    <label for="name"><strong>Name:</strong></label>
+    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+      <br/>
+     <label for="Telephone Number"><strong>Telephone Number:</strong></label>
+    <input type="text" id="Telephone Number" name="Telephone Number" placeholder="Enter Telephone Number" required>
+    <br/>
+    
+    <label for="Email Address"><strong>Email Address:</strong></label>
+    <input type="text" id="Email Address" name="Email Address" placeholder="Enter Email Address" required>
+    <br/>
+
+    <!-- Radio Buttons -->
+    <label><strong>Problem:</strong></label>
+    <input type="radio" id="tax" name="issue" value="tax">
+    <label for="Tax">Tax</label>
+    <input type="radio" id="Accounting" name="issue" value="Accounting">
+    <label for="Accouting">Accounting</label>
+    <br/>
+
+    <!-- Checkboxes -->
+    <label><strong>Best Contact Time:</strong></label>
+    <input type="checkbox" id="AM" name="Best Contact Time" value="AM">
+    <label for="AM">AM</label>
+    <input type="checkbox" id="PM" name="Best Contact Time" value="PM">
+    <label for="PM">PM</label>
+    <input type="checkbox" id="Anytime" name="Best Contact Time" value="Anytime">
+    <label for="Anytime">Anytime</label>
+    <br/>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
