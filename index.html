@@ -50,7 +50,7 @@ body, html {
 /* To style the form on the contact us page */
 form {
 	        width: 70%;
-		height: 40%;
+		height: 50%;
 	        min-width: 100px;
                 background-color: #0000ff;
                 padding: 20px;
@@ -127,6 +127,14 @@ form {
     <label for="Email Address"><strong>Email Address:</strong></label>
     <input type="text" id="Email Address" name="Email Address" placeholder="Enter Email Address" required>
     <br/
+
+    <!-- Radio Buttons -->
+    <label><strong>Problem:</strong></label>
+    <input type="radio" id="Tax" name="issue" value="tax">
+    <label for="Tax">Tax</label>
+    <input type="radio" id="Accounting" name="issue" value="Accounting">
+    <label for="Accouting">Accounting</label>
+    <br/>
 	  
     <!-- Checkboxes -->
     <label><strong>Best Contact Time:</strong></label>
@@ -163,6 +171,7 @@ document.getElementById("defaultOpen").click();
    
 </body>
 </html> 
+
 
 
 
